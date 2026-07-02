@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ألحان كنيسة العذراء مريم والشهيد أبي سيفين- بعزبة النخل</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top-line"></div>
+      <div class="header-glow"></div>
+      <div class="header-inner">
+        <div class="church-emblem">✝</div>
+        <div class="header-text">
+          <h1>
+            ألحان المتخصص 2026 <br />
+            بكنيسة العذراء مريم والشهيد أبي سيفين - بعزبة النخل
+          </h1>
+          <div class="verse">يعظم انتصارنا بالذي احبنا</div>
+        </div>
+        <div class="level-badge">
+          <div class="lbl">المراحل</div>
+          <div class="num">جميع المراحل</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="nav-tabs">
+        <div class="nav-tab active" onclick="showSection('khadn', this)">
+          <span class="stage-dot"></span> حضانة
+        </div>
+        <div class="nav-tab" onclick="showSection('olathania', this)">
+          <span class="stage-dot"></span> أولى وثانية
+        </div>
+        <div class="nav-tab" onclick="showSection('taltatrabe3', this)">
+          <span class="stage-dot"></span> تالتة ورابعة
+        </div>
+        <div class="nav-tab" onclick="showSection('khamsa', this)">
+          <span class="stage-dot"></span> خامسة وسادسة
+        </div>
+        <div class="nav-tab" onclick="showSection('edadi', this)">
+          <span class="stage-dot"></span> إعدادي وثانوي
+        </div>
+        <div class="nav-tab" onclick="showSection('gamaa', this)">
+          <span class="stage-dot"></span> جامعة وخدام
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- ===== حضانة ===== -->
+      <div id="section-khadn" class="section-panel active">
+        <div class="section-header">
+          <h2>🕊️ مرحلة الحضانة</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">الألحان الأساسية للأطفال الصغار</div>
+        </div>
+        <div class="hymns-grid" id="grid-khadn"></div>
+      </div>
+
+      <!-- ===== أولى وثانية ===== -->
+      <div id="section-olathania" class="section-panel">
+        <div class="section-header">
+          <h2>📖 مرحلة أولى وثانية</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">ألحان التسبحة والقداس الأساسية</div>
+        </div>
+        <div class="hymns-grid" id="grid-olathania"></div>
+      </div>
+
+      <!-- ===== تالتة ورابعة ===== -->
+      <div id="section-taltatrabe3" class="section-panel">
+        <div class="section-header">
+          <h2>🎼 مرحلة تالتة ورابعة</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">ألحان المرحلة الثالثة والرابعة</div>
+        </div>
+        <div class="hymns-grid" id="grid-taltatrabe3"></div>
+      </div>
+
+      <!-- ===== خامسة وسادسة ===== -->
+      <div id="section-khamsa" class="section-panel">
+        <div class="section-header">
+          <h2>🎵 مرحلة خامسة وسادسة</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">جميع الألحان</div>
+        </div>
+        <div
+          class="hymns-grid"
+          id="grid-khamsa"
+          style="margin-bottom: 40px"
+        ></div>
+        <div class="quiz-cats" id="quiz-cats"></div>
+        <div class="quiz-box" id="quiz-box">
+          <div class="quiz-progress">
+            <div class="qp-bar">
+              <div class="qp-fill" id="qp-fill" style="width: 0%"></div>
+            </div>
+            <div class="qp-text" id="qp-text">1 / 5</div>
+          </div>
+          <div id="quiz-area"></div>
+          <div class="result-box" id="result-box">
+            <div class="result-icon" id="result-icon">🏆</div>
+            <div class="result-score" id="result-score">0 / 0</div>
+            <div class="result-msg" id="result-msg"></div>
+            <button class="restart-btn" onclick="restartQuiz()">
+              🔄 إعادة الاختبار
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== إعدادي وثانوي ===== -->
+      <div id="section-edadi" class="section-panel">
+        <div class="section-header">
+          <h2>🎶 مرحلة إعدادي وثانوي</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">
+            ألحان متخصص للمرحلة الإعدادية والثانوية
+          </div>
+        </div>
+        <div
+          class="hymns-grid"
+          id="grid-edadi"
+          style="margin-bottom: 36px"
+        ></div>
+        <div class="section-header" style="margin-top: 10px">
+          <h2 style="font-size: 20px">📥 ملفات وكتب</h2>
+        </div>
+        <div class="files-grid">
+          <div class="file-card">
+            <div class="file-icon">📄</div>
+            <div class="file-title">قبطي معرّب</div>
+            <div class="file-desc">كتاب الألحان القبطية مع التعريب</div>
+            <a
+              class="file-btn"
+              href="https://drive.google.com/file/d/15wH_H3HsUBWDd9LWHPgLAUdHVWhAQwwz/view?usp=drivesdk"
+              target="_blank"
+              >📖 فتح الكتاب</a
+            >
+          </div>
+          <div class="file-card">
+            <div class="file-icon">📜</div>
+            <div class="file-title">قبطي فقط</div>
+            <div class="file-desc">الألحان بالحروف القبطية الأصلية</div>
+            <span class="file-btn disabled">⏳ قريباً</span>
+          </div>
+          <div class="file-card">
+            <div class="file-icon">📱</div>
+            <div class="file-title">تحميل الألحان على الهاتف</div>
+            <div class="file-desc">مجلد كامل لتحميل جميع الملفات الصوتية</div>
+            <a
+              class="file-btn"
+              href="https://drive.google.com/drive/folders/1DUGgoLIOGyD2bp9Hvr68_UAH1OrYb9bT"
+              target="_blank"
+              >⬇️ تحميل</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== جامعة وخدام ===== -->
+      <div id="section-gamaa" class="section-panel">
+        <div class="section-header">
+          <h2>🌟 مرحلة جامعة وخدام</h2>
+          <div class="section-divider"><span>✦</span></div>
+          <div class="section-subtitle">
+            الألحان الكاملة للخدام وطلاب الجامعة
+          </div>
+        </div>
+        <div class="hymns-grid" id="grid-gamaa"></div>
+      </div>
+    </main>
+
+    <!-- AUDIO ENGINE -->
+    <audio id="audio-engine" preload="none"></audio>
+
+    <!-- PLAYER BAR -->
+    <div class="player-bar" id="player-bar">
+      <div class="pb-art">🎵</div>
+      <div class="player-info">
+        <div class="player-title" id="pb-title">—</div>
+        <div class="player-sub">كنيسة العذراء مريم والشهيد أبي سيفين</div>
+        <div class="player-seek-row">
+          <span class="pb-time-current" id="pb-time-current">0:00</span>
+          <div
+            class="player-progress"
+            id="player-progress"
+            onclick="seekFromBar(event)"
+          >
+            <div class="player-progress-fill" id="pb-progress"></div>
+          </div>
+          <span class="pb-time-total" id="pb-time-total">0:00</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <button
+          class="pc-btn skip"
+          onclick="advanceAudio(-10)"
+          title="تأخير 10 ث"
+        >
+          -10
+        </button>
+        <button class="pc-btn" onclick="prevHymn()" title="السابق">⏮</button>
+        <button class="pc-btn main-play" id="pb-play" onclick="togglePlay()">
+          ▶
+        </button>
+        <button class="pc-btn" onclick="nextHymn()" title="التالي">⏭</button>
+        <button
+          class="pc-btn skip"
+          onclick="advanceAudio(10)"
+          title="تقديم 10 ث"
+        >
+          +10
+        </button>
+      </div>
+    </div>
+
+    <button
+      class="back-to-top"
+      id="backToTop"
+      onclick="scrollToTop()"
+      title="للأعلى"
+    >
+      ↑
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>
